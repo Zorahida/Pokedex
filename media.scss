@@ -1,0 +1,17 @@
+/* smartphones */
+breakpoint  {
+    max-width: 100%;
+    display: inline-block;
+    }
+    /*tablets */
+    @media (min-width: 420px) {
+    breakpoint  {
+    max-width: 48%;
+    }
+    }
+    /* pantallas */
+    @media (min-width: 760px) {
+    breakpoint  {
+    max-width: 24%;
+    }
+    }
