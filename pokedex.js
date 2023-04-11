@@ -59,9 +59,9 @@ draw(filteredPokemons);
 
 const init = async () => {
   const pokemons = await getAllPokemons();
-    //console.log(abilities);
+    
     const mapedPokemons = mapPokemons (pokemons);
-    //console.log(mapedAbilities);
+    
     draw(mapedPokemons);
 
     //takeInput(mapedPokemons);

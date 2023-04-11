@@ -1,0 +1,92 @@
+/* smartphones */
+breakpoint {
+  max-width: 100%;
+  display: inline-block;
+}
+
+/*tablets */
+@media (min-width: 420px) {
+  breakpoint {
+    max-width: 48%;
+  }
+}
+/* pantallas */
+@media (min-width: 760px) {
+  breakpoint {
+    max-width: 24%;
+  }
+}
+body {
+  background-color: rgb(244, 28, 179);
+  background-image: url("https://w0.peakpx.com/wallpaper/181/832/HD-wallpaper-pokemon-cute-pokemon-pattern-patterns.jpg");
+  background-size: contain;
+  margin: 5%;
+  font-family: rubik;
+  color: rgb(86, 18, 138);
+}
+
+.container {
+  padding: 40px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 54px;
+}
+
+#title {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 40%;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+.card {
+  list-style: none;
+  margin: 2px;
+  padding: 40px;
+  font-weight: lighter;
+  border: 5px solid rgb(246, 255, 0);
+  border-radius: 60px;
+  background-color: #de17e1;
+  text-align: center;
+}
+
+.card-image {
+  height: 180px;
+}
+
+#pokedex {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+}
+
+.card:hover {
+  animation: bounce 1.2s linear;
+}
+
+#title:hover {
+  transform: rotate(-20deg);
+}
+
+@keyframes bounce {
+  20% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+}/*# sourceMappingURL=main.css.map */
